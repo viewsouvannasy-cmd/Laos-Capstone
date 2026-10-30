@@ -1,0 +1,6 @@
+name: laos-capstone
+
+services:
+  server:
+    env_file:
+      - ./.env

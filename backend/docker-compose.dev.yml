@@ -1,0 +1,13 @@
+services:
+  server:
+    build:
+      context: .
+      target: development
+    ports:
+      - 4000:4000
+
+    volumes:
+      - .:/app:ro
+      - /app/node_modules
+
+    command: ["npm", "run", "dev"]
